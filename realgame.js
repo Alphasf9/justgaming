@@ -7,7 +7,7 @@ var gamePattern = [];
 
 var buttonColours = ["red", "blue", "green", "yellow"];
 
-$(document).keypress(function () {
+$(document).touchstart(function () {
     if (!started) {
         $("level-title").text("level" + level);
         nextSequence();
