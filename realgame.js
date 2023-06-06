@@ -7,11 +7,12 @@ var gamePattern = [];
 
 var buttonColours = ["red", "blue", "green", "yellow"];
 
-$(document).touchstart(function () {
+$(document).touchstart(function (eV) {
     if (!started) {
         $("level-title").text("level" + level);
         nextSequence();
         started = true;
+        console.log(ev.touches);
     }
 });
 
